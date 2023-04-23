@@ -3,19 +3,17 @@
 # GitHub:github.com/wklQnlkm
 import logging
 from PyQt5.QtWidgets import QWidget, QApplication
-from PyQt5.QtCore import QTimer, QTranslator
+from PyQt5.QtCore import QTimer
 from PyQt5.Qt import Qt, QPropertyAnimation
 from PyQt5 import QtWidgets
 from ui.child_window import Ui_Form as Child_ui
 
-test_logger = logging.getLogger('视图层')
-
 
 class Child(Child_ui, QWidget):
     def __init__(self, font_size, current_quantity, language, show_sequence_state, show_time_state, time_button,
-                 page_label,
-                 set_spec_btn_style, clear_widget, set_font_size, relayout, histo_record, show_time, change_font_size,
-                 set_quantity, set_language, set_sequence_state, set_show_time_state, sqlite, translator):
+                 page_label, set_spec_btn_style, clear_widget, set_font_size, relayout, histo_record, show_time,
+                 change_font_size, set_quantity, set_language, set_sequence_state, set_show_time_state, sqlite,
+                 translator):
         super(Child, self).__init__()
         self.oldPos = None
         self.show_anim = None

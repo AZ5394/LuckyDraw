@@ -10,14 +10,9 @@ from PyQt5.Qt import Qt, QPropertyAnimation
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QSettings, QTranslator
 
-try:
-    from db.db_src import Sqlite
-    from ui.main_window import Ui_Form as Main_ui
-    from .child_src import Child
-except ImportError:
-    from ..db.db_src import Sqlite
-    from ..ui.main_window import Ui_Form as Main_ui
-    from child_src import Child
+from db.db_src import Sqlite
+from ui.main_window import Ui_Form as Main_ui
+from .child_src import Child
 
 
 class MainWindow(Main_ui, QWidget):  # 主窗口
