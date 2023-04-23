@@ -14,14 +14,10 @@ try:
     from db.db_src import Sqlite
     from ui.main_window import Ui_Form as Main_ui
     from .child_src import Child
-    from conf import log_dict
 except ImportError:
     from ..db.db_src import Sqlite
     from ..ui.main_window import Ui_Form as Main_ui
     from child_src import Child
-    from ..conf import log_dict
-
-test_logger = logging.getLogger('视图层')
 
 
 class MainWindow(Main_ui, QWidget):  # 主窗口
@@ -161,7 +157,8 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
                 ('请输入数字', 'please enter the number'),
                 ('抽取数量超出总数,请重新输入', 'the number of extracts exceeds the total, please re-enter'),
                 ('往上没有更多记录了', 'there are no more records upwards'),
-                ('往下没有更多记录了', 'there are no more records downwards')
+                ('往下没有更多记录了', 'there are no more records downwards'),
+                ('现在还没有名字,请先添加名字叭', 'there have no names to extract,please add names to continue')
                 )
 
     hint_index = 0
@@ -223,20 +220,11 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
         self.page_comboBox.addItem(str(self.current_page))  # 每次保存记录都向查看记录下拉框添加新的页数
 
     def drawing_number(self):  # 抽号函数
-        test_logger.debug('抽多个')
         self.hint_state = False  # 当主窗口显示的内容不是提示信息时设置hint_state为False,避免每次改变语言主窗口都显示提示信息
         name_list = self.sqlite.name_data()  # 从数据库里读取要抽取名字
         num = self.lineEdit.text()  # 获取输入框内容
-        if not num:  # 不输入数字默认抽一个
-            self.clear_widget(self.gridLayout)
-            name = sample(name_list, 1)[0]
-            self.name_label = QtWidgets.QLabel('1' + name) if self.show_sequence_state else QtWidgets.QLabel(name)
-            self.set_font_size(self.name_label)
-            self.name_label.setMinimumSize(130, 40)  # 设置每个按钮的最小大小，以便看清楚文本
-            self.gridLayout.addWidget(self.name_label)
-            self.record(name)  # 每抽取一次就保存一次
-            self.page_comboBox.setItemText(0, '当前页数:' if self.language == '简体中文' else 'current page:' + str(
-                self.current_page))  # 实时显示当前页数
+        if not name_list:  # 数据库里没有名字时停止函数
+            self.set_hint(self.hint_dic[5])
             return
         if num == '0':
             self.set_hint(self.hint_dic[0])
@@ -247,6 +235,17 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
         num = int(num)
         if num > len(name_list):
             self.set_hint(self.hint_dic[2])
+            return
+        if not num:  # 不输入数字默认抽一个
+            self.clear_widget(self.gridLayout)
+            name = sample(name_list, 1)[0]
+            self.name_label = QtWidgets.QLabel('1' + name) if self.show_sequence_state else QtWidgets.QLabel(name)
+            self.set_font_size(self.name_label)
+            self.name_label.setMinimumSize(130, 40)  # 设置每个按钮的最小大小，以便看清楚文本
+            self.gridLayout.addWidget(self.name_label)
+            self.record(name)  # 每抽取一次就保存一次
+            self.page_comboBox.setItemText(0, '当前页数:' if self.language == '简体中文' else 'current page:' + str(
+                self.current_page))  # 实时显示当前页数
             return
         names = sample(name_list, num)
         self.record(' '.join(names))  # 每抽取一次就保存一次
@@ -264,7 +263,6 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
         self.page_label.setText(page)  # 每次查看记录都设置当前页数为选择的页数
 
     def last(self):  # 上一页
-        test_logger.debug('上一页')
         self.hint_state = False  # 当主窗口显示的内容不是提示信息时设置hint_state为False,避免每次改变语言主窗口都显示提示信息
         current_page = int(self.page_label.text())  # 获取当前页数
         if current_page <= 1:  # 当下一页页数超出总数或数据库里没有记录时终止函数
@@ -278,7 +276,6 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
         self.histo_record(str(pre_page))
 
     def next(self):  # 下一页
-        test_logger.debug('下一页')
         self.hint_state = False  # 当主窗口显示的内容不是提示信息时设置hint_state为False,避免每次改变语言主窗口都显示提示信息
         next_page = int(self.page_label.text()) + 1  # 下一页页数
         last_page = self.sqlite.last_column()
@@ -305,13 +302,11 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
             app = QApplication.instance()
             app.installTranslator(self.translator)
             self.retranslateUi(self)
-            test_logger.debug('主窗口英文')
         else:  # 当选择的语言为中文时改变界面语言为中文
             self.translator.load('./languages/main_window_CN.qm')
             app = QApplication.instance()
             app.installTranslator(self.translator)
             self.retranslateUi(self)
-            test_logger.debug('主窗口中文')
 
     def change_font_size(self, size):  # 设置控件显示字体大小
         self.font_size = size
@@ -342,7 +337,6 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
         self.show_time_state = state
 
     def settings(self):
-        test_logger.debug('打开设置')
         self.child.show()
 
 

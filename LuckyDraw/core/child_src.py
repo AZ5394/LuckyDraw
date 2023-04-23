@@ -7,7 +7,6 @@ from PyQt5.QtCore import QTimer, QTranslator
 from PyQt5.Qt import Qt, QPropertyAnimation
 from PyQt5 import QtWidgets
 from ui.child_window import Ui_Form as Child_ui
-from conf import log_dict
 
 test_logger = logging.getLogger('视图层')
 
@@ -140,7 +139,6 @@ class Child(Child_ui, QWidget):
                           "}")
 
     def add(self):  # 添加名字
-        test_logger.debug('添加名字')
         if self.add_btn.isChecked():  # 当点击添加按钮时开始添加名字功能
             if self.delete_btn.isChecked():  # 当删除按钮被点击一次时执行下一次点击,保证删除按钮功能完整运行
                 self.delete_btn.click()
@@ -156,7 +154,6 @@ class Child(Child_ui, QWidget):
         # 点击完成按钮时结束添加功能并保存名字到数据库
         self.set_general_btn_style(self.add_btn, 55, 55, 'image/add.png', 5, 'image/add1.png')
         self.add_btn.setToolTip('添加名字')
-        test_logger.debug('添加名字complete')
         self.hint_label.setText('')
         names = self.plainTextEdit.toPlainText().strip()  # 获取输入框的值并写入
         if names:  # 当输入框有名字时
@@ -172,7 +169,6 @@ class Child(Child_ui, QWidget):
         self.stackedWidget.setCurrentIndex(0)
 
     def delete(self):  # 删除名字
-        test_logger.debug('删除名字')
         if self.delete_btn.isChecked():  # 点击删除名字按钮时开始删除名字功能
             if self.add_btn.isChecked():  # 当添加按钮被点击一次时执行下一次点击,保证添加按钮功能完整运行
                 self.add_btn.click()
@@ -287,7 +283,6 @@ class Child(Child_ui, QWidget):
             # 每行个数下拉框索引为零项目的显示内容
             res2 = '当前个数:' if self.language == '简体中文' else 'number of displays per row:'
             self.row_quantity_comboBox.setItemText(0, res2 + str(self.current_quantity))
-            test_logger.debug('子窗口英文')
         elif lang == 0 or language == '简体中文':  # 当选择的语言为中文时改变界面语言为中文
             self.language = '简体中文'
             self.translator.load('./languages/child_window_CN.qm')
@@ -301,20 +296,17 @@ class Child(Child_ui, QWidget):
             # 初始化每行个数下拉框显示内容
             res2 = '当前个数:' if self.language == '简体中文' else 'number of displays per row:'
             self.row_quantity_comboBox.setItemText(0, res2 + str(self.current_quantity))
-            test_logger.debug('子窗口中文')
 
     def display_sequence_number(self):  # 显示序号
         # 当显示序号按钮状态为开时
         if self.show_sequence_btn.isChecked():
             self.show_sequence_state = True  # 设置显示序号状态为开
             self.set_sequence_state(self.show_sequence_state)
-            test_logger.debug('显示序号--开')
             self.set_general_btn_style(self.show_sequence_btn, 45, 35, 'image/open.png', 5, 'image/open1.png')
             self.show_sequence_btn.setToolTip('关')
 
         # 当显示序号按钮状态为关时
         else:
-            test_logger.debug('显示序号--关')
             self.show_sequence_state = False  # 设置显示序号状态为关
             self.set_sequence_state(self.show_sequence_state)
             current_page = self.page_label.text()  # 获取当前页数
@@ -325,7 +317,6 @@ class Child(Child_ui, QWidget):
     def show_current_time(self):  # 实时显示当前时间
         # 当显示时间按钮状态为关时
         if not self.show_time_btn.isChecked():
-            test_logger.debug('当前时间--关')
             self.set_general_btn_style(self.show_time_btn, 45, 35, 'image/close.png', 5, 'image/close1.png')
             self.show_time_btn.setToolTip('开')
             self.show_time_state = False  # 设置显示时间状态为关
@@ -334,7 +325,6 @@ class Child(Child_ui, QWidget):
             self.timer.stop()  # 停止显示时间
         # 当显示时间按钮状态为开时
         elif self.show_time_btn.isChecked() or self.show_time_state:
-            test_logger.debug('当前时间--开')
             self.set_general_btn_style(self.show_time_btn, 45, 35, 'image/open.png', 5, 'image/open1.png')
             self.show_time_btn.setToolTip('关')
             self.show_time_state = True  # 设置显示时间状态为开
