@@ -15,9 +15,21 @@ from ui.main_window import Ui_Form as Main_ui
 from .child_src import Child
 
 
+def single_obj(cls):
+    obj = None
+
+    def wrapper(*args, **kwargs):
+        nonlocal obj
+        if not obj:
+            obj = cls(*args, **kwargs)
+        return obj
+    return wrapper
+
+
+@single_obj
 class MainWindow(Main_ui, QWidget):  # 主窗口
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super().__init__()
         self.oldPos = None
         self.show_anim = None
         self.close_anim = None
@@ -342,6 +354,9 @@ def except_hook(cls, exception, traceback):
 def run():
     app = QApplication(sys.argv)
     window = MainWindow()
+    window1 = MainWindow()
+    print(window)
+    print(window1)
     window.show()
     sys.excepthook = except_hook
     sys.exit(app.exec_())
