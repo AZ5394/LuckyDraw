@@ -3,7 +3,6 @@
 # GitHub:github.com/wklQnlkm
 import sys
 from datetime import datetime
-import logging
 from random import sample
 from PyQt5.QtWidgets import QApplication, QWidget, QDesktopWidget
 from PyQt5.Qt import Qt, QPropertyAnimation
