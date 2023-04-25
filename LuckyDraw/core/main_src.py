@@ -15,18 +15,6 @@ from ui.main_window import Ui_Form as Main_ui
 from .child_src import Child
 
 
-def single_obj(cls):
-    obj = None
-
-    def wrapper(*args, **kwargs):
-        nonlocal obj
-        if not obj:
-            obj = cls(*args, **kwargs)
-        return obj
-    return wrapper
-
-
-@single_obj
 class MainWindow(Main_ui, QWidget):  # 主窗口
     def __init__(self):
         super().__init__()
@@ -233,16 +221,6 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
         if not name_list:  # 数据库里没有名字时停止函数
             self.set_hint(self.hint_dic[5])
             return
-        if num == '0':
-            self.set_hint(self.hint_dic[0])
-            return
-        elif not num.isdigit():
-            self.set_hint(self.hint_dic[1])
-            return
-        num = int(num)
-        if num > len(name_list):
-            self.set_hint(self.hint_dic[2])
-            return
         if not num:  # 不输入数字默认抽一个
             self.clear_widget(self.gridLayout)
             name = sample(name_list, 1)[0]
@@ -254,6 +232,17 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
             self.page_comboBox.setItemText(0, '当前页数:' if self.language == '简体中文' else 'current page:' + str(
                 self.current_page))  # 实时显示当前页数
             return
+        if num == '0':
+            self.set_hint(self.hint_dic[0])
+            return
+        elif not num.isdigit():
+            self.set_hint(self.hint_dic[1])
+            return
+        num = int(num)
+        if num > len(name_list):
+            self.set_hint(self.hint_dic[2])
+            return
+
         names = sample(name_list, num)
         self.record(' '.join(names))  # 每抽取一次就保存一次
         self.page_comboBox.setItemText(0, '当前页数:' if self.language == '简体中文' else 'current page:' + str(
@@ -354,9 +343,6 @@ def except_hook(cls, exception, traceback):
 def run():
     app = QApplication(sys.argv)
     window = MainWindow()
-    window1 = MainWindow()
-    print(window)
-    print(window1)
     window.show()
     sys.excepthook = except_hook
     sys.exit(app.exec_())
