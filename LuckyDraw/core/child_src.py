@@ -1,7 +1,6 @@
 # coding:utf-8
 # @Author:wklQnlkm
 # GitHub:github.com/wklQnlkm
-import logging
 from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5.QtCore import QTimer
 from PyQt5.Qt import Qt, QPropertyAnimation
