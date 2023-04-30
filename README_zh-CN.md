@@ -20,7 +20,8 @@
 ## 界面及功能介绍
 
 <h3 align="center">主界面</h3>
-![6](InterfacePicture/主页面.png)
+
+![](InterfacePicture/主页面.png)
 界面上主要有这几个功能
 
 ##### 输入框
