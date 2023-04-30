@@ -14,14 +14,13 @@
 
 - 适用于样品抽取(非科学以及专业场景下使用,只是适用于个人使用)
 
-- 适用于班级随机抽取交作业 ~~
-  程序就是从这个慢慢发展起来的~~[下载](https://github.com/wklQnlkm/LuckyDraw/releases/download/v1.0.0/LuckyDraw-Setup.exe)
+- 适用于班级随机抽取交作业 ~~程序就是从这个慢慢发展起来的~~[下载](https://github.com/wklQnlkm/LuckyDraw/releases/download/v1.0.0/LuckyDraw-Setup.exe)
   看看咯 :)
 
 ## 界面及功能介绍
 
 <h3 align="center">主界面</h3>
-![](InterfacePicture/主页面.png)
+![](InterfacePicture/主页面1.png)
 界面上主要有这几个功能
 
 ##### 输入框
