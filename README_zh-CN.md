@@ -20,7 +20,7 @@
 ## 界面及功能介绍
 
 <h3 align="center">主界面</h3>
-![6] (https://github.com/wklQnlkm/LuckyDraw/blob/main/InterfacePicture/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png)
+![6](https://github.com/wklQnlkm/LuckyDraw/blob/main/InterfacePicture/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png)
 界面上主要有这几个功能
 
 ##### 输入框
