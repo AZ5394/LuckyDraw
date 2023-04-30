@@ -228,7 +228,8 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
             self.name_label.setMinimumSize(130, 40)  # 设置每个按钮的最小大小，以便看清楚文本
             self.gridLayout.addWidget(self.name_label)
             self.record(name)  # 每抽取一次就保存一次
-            self.page_comboBox.setItemText(0, '当前页数:' if self.language == '简体中文' else 'current page:' + str(
+            text = '当前页数:' if self.language == '简体中文' else 'current page:'
+            self.page_comboBox.setItemText(0, f'{text}' + str(
                 self.current_page))  # 实时显示当前页数
             return
         if num == '0':
