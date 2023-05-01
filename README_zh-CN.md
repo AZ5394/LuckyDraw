@@ -42,5 +42,32 @@
 ##### 设置
 - 设置应用的一些配置
 
-    
+<h3 align="center">设置页面</h3>
+
+![](InterfacePicture/设置页面.png)
+
+<h3 align="center">添加名字</h3>
+
+![](InterfacePicture/添加名字.png)
+
+<h3 align="center">删除名字</h3>
+
+![](InterfacePicture/删除名字.png)
+
+<h3 align="center">显示序号--关</h3>
+
+![](InterfacePicture/显示序号--关.png)
+
+<h3 align="center">显示序号--开</h3>
+
+![](InterfacePicture/显示序号--开.png)
+
+<h3 align="center">显示时间--关</h3>
+
+![](InterfacePicture/显示时间--关.png)
+
+<h3 align="center">显示时间--开</h3>
+
+![](InterfacePicture/显示时间--开.png)
+![](InterfacePicture/None.png)
 
