@@ -608,6 +608,9 @@ QPushButton:hover{
                  <property name="alignment">
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                  </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>

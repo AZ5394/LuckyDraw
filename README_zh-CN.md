@@ -56,7 +56,7 @@
 
 <h3 align="center">显示序号--关</h3>
 
-![](InterfacePicture/显示序号--关.png)
+![](InterfacePicture/显示序号&时间--关.png)
 
 <h3 align="center">显示序号--开</h3>
 
@@ -64,7 +64,7 @@
 
 <h3 align="center">显示时间--关</h3>
 
-![](InterfacePicture/显示时间--关.png)
+![](InterfacePicture/显示序号&时间--关.png)
 
 <h3 align="center">显示时间--开</h3>
 

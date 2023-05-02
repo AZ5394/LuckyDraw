@@ -27,7 +27,7 @@ class Ui_Form(object):
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.widget = QtWidgets.QWidget(Form)
         self.widget.setStyleSheet("border-radius:8px;\n"
-"background-color: rgb(232, 244, 244);")
+                                  "background-color: rgb(232, 244, 244);")
         self.widget.setObjectName("widget")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -64,7 +64,7 @@ class Ui_Form(object):
         font.setStrikeOut(False)
         self.font_size_comboBox.setFont(font)
         self.font_size_comboBox.setStyleSheet("border-radius:12px;\n"
-"background-color: rgb(255, 255, 255);")
+                                              "background-color: rgb(255, 255, 255);")
         self.font_size_comboBox.setObjectName("font_size_comboBox")
         self.font_size_comboBox.addItem("")
         self.verticalLayout_2.addWidget(self.font_size_comboBox)
@@ -78,7 +78,7 @@ class Ui_Form(object):
         font.setWeight(50)
         self.row_quantity_comboBox.setFont(font)
         self.row_quantity_comboBox.setStyleSheet("border-radius:12px;\n"
-"background-color: rgb(255, 255, 255);")
+                                                 "background-color: rgb(255, 255, 255);")
         self.row_quantity_comboBox.setObjectName("row_quantity_comboBox")
         self.row_quantity_comboBox.addItem("")
         self.verticalLayout_2.addWidget(self.row_quantity_comboBox)
@@ -90,7 +90,7 @@ class Ui_Form(object):
         font.setPointSize(12)
         self.language_comboBox.setFont(font)
         self.language_comboBox.setStyleSheet("border-radius:12px;\n"
-"background-color: rgb(255, 255, 255);")
+                                             "background-color: rgb(255, 255, 255);")
         self.language_comboBox.setObjectName("language_comboBox")
         self.language_comboBox.addItem("")
         self.language_comboBox.addItem("")
@@ -108,8 +108,8 @@ class Ui_Form(object):
         self.label_5.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_5.setAutoFillBackground(False)
         self.label_5.setStyleSheet("color:rgb(0,0,0);\n"
-"border-radius:5px\n"
-"")
+                                   "border-radius:5px\n"
+                                   "")
         self.label_5.setAlignment(QtCore.Qt.AlignCenter)
         self.label_5.setWordWrap(True)
         self.label_5.setObjectName("label_5")
@@ -124,16 +124,16 @@ class Ui_Form(object):
         self.show_sequence_btn.setFont(font)
         self.show_sequence_btn.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.show_sequence_btn.setStyleSheet("\n"
-"QPushButton{\n"
-"image:url(image/close.png);\n"
-"}\n"
-"QPushButton:hover{\n"
-"image:url(image/close1.png)\n"
-"}\n"
-"width:45px;\n"
-"height:35px;\n"
-"border-radius:5px;\n"
-"border:none;")
+                                             "QPushButton{\n"
+                                             "image:url(image/close.png);\n"
+                                             "}\n"
+                                             "QPushButton:hover{\n"
+                                             "image:url(image/close1.png)\n"
+                                             "}\n"
+                                             "width:45px;\n"
+                                             "height:35px;\n"
+                                             "border-radius:5px;\n"
+                                             "border:none;")
         self.show_sequence_btn.setText("")
         self.show_sequence_btn.setCheckable(True)
         self.show_sequence_btn.setObjectName("show_sequence_btn")
@@ -151,8 +151,8 @@ class Ui_Form(object):
         self.label_6.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_6.setAutoFillBackground(False)
         self.label_6.setStyleSheet("color:rgb(0,0,0);\n"
-"border-radius:5px\n"
-"")
+                                   "border-radius:5px\n"
+                                   "")
         self.label_6.setAlignment(QtCore.Qt.AlignCenter)
         self.label_6.setWordWrap(True)
         self.label_6.setObjectName("label_6")
@@ -167,16 +167,16 @@ class Ui_Form(object):
         self.show_time_btn.setFont(font)
         self.show_time_btn.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.show_time_btn.setStyleSheet("\n"
-"QPushButton{\n"
-"image:url(image/close.png);\n"
-"}\n"
-"QPushButton:hover{\n"
-"image:url(image/close1.png)\n"
-"}\n"
-"width:45px;\n"
-"height:35px;\n"
-"border-radius:5px;\n"
-"border:none;")
+                                         "QPushButton{\n"
+                                         "image:url(image/close.png);\n"
+                                         "}\n"
+                                         "QPushButton:hover{\n"
+                                         "image:url(image/close1.png)\n"
+                                         "}\n"
+                                         "width:45px;\n"
+                                         "height:35px;\n"
+                                         "border-radius:5px;\n"
+                                         "border:none;")
         self.show_time_btn.setText("")
         self.show_time_btn.setCheckable(True)
         self.show_time_btn.setObjectName("show_time_btn")
@@ -212,14 +212,14 @@ class Ui_Form(object):
         font.setWeight(50)
         self.minimize_btn.setFont(font)
         self.minimize_btn.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:30px;\n"
-"  image:url(image/minimize.png);\n"
-"  border-radius:8px\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color: rgb(222, 222, 222);\n"
-"}")
+                                        "  width:40px;\n"
+                                        "  height:30px;\n"
+                                        "  image:url(image/minimize.png);\n"
+                                        "  border-radius:8px\n"
+                                        "}\n"
+                                        "QPushButton:hover{\n"
+                                        "  background-color: rgb(222, 222, 222);\n"
+                                        "}")
         self.minimize_btn.setText("")
         self.minimize_btn.setIconSize(QtCore.QSize(15, 15))
         self.minimize_btn.setObjectName("minimize_btn")
@@ -232,14 +232,14 @@ class Ui_Form(object):
         font.setWeight(50)
         self.maximize_btn.setFont(font)
         self.maximize_btn.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:30px;\n"
-"  image:url(image/maximize.png);\n"
-"  border-radius:8px\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color: rgb(222, 222, 222);\n"
-"}")
+                                        "  width:40px;\n"
+                                        "  height:30px;\n"
+                                        "  image:url(image/maximize.png);\n"
+                                        "  border-radius:8px\n"
+                                        "}\n"
+                                        "QPushButton:hover{\n"
+                                        "  background-color: rgb(222, 222, 222);\n"
+                                        "}")
         self.maximize_btn.setText("")
         self.maximize_btn.setIconSize(QtCore.QSize(15, 15))
         self.maximize_btn.setObjectName("maximize_btn")
@@ -252,15 +252,15 @@ class Ui_Form(object):
         font.setWeight(50)
         self.exit_btn.setFont(font)
         self.exit_btn.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:30px;\n"
-"  image:url(image/close2.png);\n"
-"  border-radius:8px\n"
-"}\n"
-"QPushButton:hover{\n"
-"  image:url(image/close3.png);\n"
-"  background-color: rgb(232, 17, 35)\n"
-"}")
+                                    "  width:40px;\n"
+                                    "  height:30px;\n"
+                                    "  image:url(image/close2.png);\n"
+                                    "  border-radius:8px\n"
+                                    "}\n"
+                                    "QPushButton:hover{\n"
+                                    "  image:url(image/close3.png);\n"
+                                    "  background-color: rgb(232, 17, 35)\n"
+                                    "}")
         self.exit_btn.setText("")
         self.exit_btn.setIconSize(QtCore.QSize(15, 15))
         self.exit_btn.setObjectName("exit_btn")
@@ -285,7 +285,8 @@ class Ui_Form(object):
         self.hint_label.setAutoFillBackground(False)
         self.hint_label.setStyleSheet("")
         self.hint_label.setText("")
-        self.hint_label.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft)
+        self.hint_label.setAlignment(QtCore.Qt.AlignBottom | QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft)
+        self.hint_label.setWordWrap(True)
         self.hint_label.setObjectName("hint_label")
         self.horizontalLayout_6.addWidget(self.hint_label)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
@@ -302,8 +303,8 @@ class Ui_Form(object):
         self.label_2.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_2.setAutoFillBackground(False)
         self.label_2.setStyleSheet("color:rgb(0,0,0);\n"
-"border-radius:5px\n"
-"")
+                                   "border-radius:5px\n"
+                                   "")
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout.addWidget(self.label_2)
@@ -318,8 +319,8 @@ class Ui_Form(object):
         self.label_1.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_1.setAutoFillBackground(False)
         self.label_1.setStyleSheet("color:rgb(0,0,0);\n"
-"border-radius:5px\n"
-"")
+                                   "border-radius:5px\n"
+                                   "")
         self.label_1.setText("")
         self.label_1.setAlignment(QtCore.Qt.AlignCenter)
         self.label_1.setObjectName("label_1")
@@ -334,11 +335,11 @@ class Ui_Form(object):
         self.add_btn.setFont(font)
         self.add_btn.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.add_btn.setStyleSheet("QPushButton{width:55px;\n"
-"height:55px;\n"
-"image:url(image/add.png);\n"
-"border-radius:5px;\n"
-"border:none}\n"
-"QPushButton:hover{image:url(image/add1.png)}")
+                                   "height:55px;\n"
+                                   "image:url(image/add.png);\n"
+                                   "border-radius:5px;\n"
+                                   "border:none}\n"
+                                   "QPushButton:hover{image:url(image/add1.png)}")
         self.add_btn.setText("")
         self.add_btn.setIconSize(QtCore.QSize(50, 50))
         self.add_btn.setCheckable(True)
@@ -353,13 +354,13 @@ class Ui_Form(object):
         self.delete_btn.setFont(font)
         self.delete_btn.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.delete_btn.setStyleSheet("QPushButton{width:55px;\n"
-"height:55px;\n"
-"image:url(image/delete.png);\n"
-"border-radius:5px;\n"
-"border:none}\n"
-"QPushButton:hover{\n"
-"image:url(image/delete1.png)\n"
-"}")
+                                      "height:55px;\n"
+                                      "image:url(image/delete.png);\n"
+                                      "border-radius:5px;\n"
+                                      "border:none}\n"
+                                      "QPushButton:hover{\n"
+                                      "image:url(image/delete1.png)\n"
+                                      "}")
         self.delete_btn.setText("")
         self.delete_btn.setIconSize(QtCore.QSize(50, 50))
         self.delete_btn.setCheckable(True)
@@ -415,7 +416,7 @@ class Ui_Form(object):
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
         self.scrollArea = QtWidgets.QScrollArea(self.page_3)
         self.scrollArea.setStyleSheet("border-radius:8px;\n"
-"border:none")
+                                      "border:none")
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()

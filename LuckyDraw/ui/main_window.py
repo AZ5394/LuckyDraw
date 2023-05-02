@@ -24,7 +24,7 @@ class Ui_Form(object):
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.widget = QtWidgets.QWidget(Form)
         self.widget.setStyleSheet("border-radius:8px;\n"
-"background-color: rgb(232, 244, 244);")
+                                  "background-color: rgb(232, 244, 244);")
         self.widget.setObjectName("widget")
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.widget)
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -48,7 +48,7 @@ class Ui_Form(object):
         font.setWeight(75)
         self.maximize_btn2.setFont(font)
         self.maximize_btn2.setStyleSheet("text-align:left;\n"
-"padding:5px;")
+                                         "padding:5px;")
         self.maximize_btn2.setText("")
         self.maximize_btn2.setObjectName("maximize_btn2")
         self.horizontalLayout_4.addWidget(self.maximize_btn2)
@@ -61,14 +61,14 @@ class Ui_Form(object):
         self.minimize_btn.setFont(font)
         self.minimize_btn.setToolTip("")
         self.minimize_btn.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:30px;\n"
-"  image:url(image/minimize.png);\n"
-"  border-radius:8px\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color: rgb(222, 222, 222);\n"
-"}")
+                                        "  width:40px;\n"
+                                        "  height:30px;\n"
+                                        "  image:url(image/minimize.png);\n"
+                                        "  border-radius:8px\n"
+                                        "}\n"
+                                        "QPushButton:hover{\n"
+                                        "  background-color: rgb(222, 222, 222);\n"
+                                        "}")
         self.minimize_btn.setText("")
         self.minimize_btn.setIconSize(QtCore.QSize(15, 15))
         self.minimize_btn.setObjectName("minimize_btn")
@@ -82,14 +82,14 @@ class Ui_Form(object):
         self.maximize_btn.setFont(font)
         self.maximize_btn.setToolTip("")
         self.maximize_btn.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:30px;\n"
-"  image:url(image/maximize.png);\n"
-"  border-radius:8px\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color: rgb(222, 222, 222);\n"
-"}")
+                                        "  width:40px;\n"
+                                        "  height:30px;\n"
+                                        "  image:url(image/maximize.png);\n"
+                                        "  border-radius:8px\n"
+                                        "}\n"
+                                        "QPushButton:hover{\n"
+                                        "  background-color: rgb(222, 222, 222);\n"
+                                        "}")
         self.maximize_btn.setText("")
         self.maximize_btn.setIconSize(QtCore.QSize(15, 15))
         self.maximize_btn.setObjectName("maximize_btn")
@@ -103,15 +103,15 @@ class Ui_Form(object):
         self.exit_btn.setFont(font)
         self.exit_btn.setToolTip("")
         self.exit_btn.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:30px;\n"
-"  image:url(image/close2.png);\n"
-"  border-radius:8px\n"
-"}\n"
-"QPushButton:hover{\n"
-"  image:url(image/close3.png);\n"
-"  background-color: rgb(232, 17, 35)\n"
-"}")
+                                    "  width:40px;\n"
+                                    "  height:30px;\n"
+                                    "  image:url(image/close2.png);\n"
+                                    "  border-radius:8px\n"
+                                    "}\n"
+                                    "QPushButton:hover{\n"
+                                    "  image:url(image/close3.png);\n"
+                                    "  background-color: rgb(232, 17, 35)\n"
+                                    "}")
         self.exit_btn.setText("")
         self.exit_btn.setIconSize(QtCore.QSize(15, 15))
         self.exit_btn.setObjectName("exit_btn")
@@ -133,14 +133,14 @@ class Ui_Form(object):
         self.setting_btn.setFont(font)
         self.setting_btn.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.setting_btn.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:40px;\n"
-"  border:none;\n"
-"  image: url(image/settings.png)\n"
-"}\n"
-"QPushButton:hover{\n"
-"  image: url(image/settings1.png)\n"
-"}")
+                                       "  width:40px;\n"
+                                       "  height:40px;\n"
+                                       "  border:none;\n"
+                                       "  image: url(image/settings.png)\n"
+                                       "}\n"
+                                       "QPushButton:hover{\n"
+                                       "  image: url(image/settings1.png)\n"
+                                       "}")
         self.setting_btn.setText("")
         self.setting_btn.setIconSize(QtCore.QSize(35, 35))
         self.setting_btn.setObjectName("setting_btn")
@@ -158,13 +158,13 @@ class Ui_Form(object):
         self.lineEdit.setFont(font)
         self.lineEdit.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.lineEdit.setStyleSheet("width:506;\n"
-"height:35;\n"
-"padding:5px;\n"
-"border-radius:15px;\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
+                                    "height:35;\n"
+                                    "padding:5px;\n"
+                                    "border-radius:15px;\n"
+                                    "background-color: rgb(255, 255, 255);\n"
+                                    "")
         self.lineEdit.setText("")
-        self.lineEdit.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.lineEdit.setAlignment(QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
         self.lineEdit.setObjectName("lineEdit")
         self.horizontalLayout_5.addWidget(self.lineEdit)
         self.extract_btn = QtWidgets.QPushButton(self.widget)
@@ -175,19 +175,19 @@ class Ui_Form(object):
         font.setWeight(50)
         self.extract_btn.setFont(font)
         self.extract_btn.setStyleSheet("\n"
-"QPushButton{\n"
-"  height:46px;\n"
-"  width:64px;\n"
-"  color:rgb(0,0,0);\n"
-"  background-color: rgb(0, 170, 127);\n"
-"  border-radius:15px\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color: rgb(0, 238, 175)\n"
-"}\n"
-"QPushButton:pressed{\n"
-"  background-color: rgb(0, 170, 127)\n"
-"}")
+                                       "QPushButton{\n"
+                                       "  height:46px;\n"
+                                       "  width:64px;\n"
+                                       "  color:rgb(0,0,0);\n"
+                                       "  background-color: rgb(0, 170, 127);\n"
+                                       "  border-radius:15px\n"
+                                       "}\n"
+                                       "QPushButton:hover{\n"
+                                       "  background-color: rgb(0, 238, 175)\n"
+                                       "}\n"
+                                       "QPushButton:pressed{\n"
+                                       "  background-color: rgb(0, 170, 127)\n"
+                                       "}")
         self.extract_btn.setLocale(QtCore.QLocale(QtCore.QLocale.Chinese, QtCore.QLocale.China))
         self.extract_btn.setObjectName("extract_btn")
         self.horizontalLayout_5.addWidget(self.extract_btn)
@@ -198,7 +198,7 @@ class Ui_Form(object):
         font.setPointSize(14)
         self.page_comboBox.setFont(font)
         self.page_comboBox.setStyleSheet("border-radius:12px;\n"
-"background-color: rgb(255, 255, 255);")
+                                         "background-color: rgb(255, 255, 255);")
         self.page_comboBox.setObjectName("page_comboBox")
         self.page_comboBox.addItem("")
         self.horizontalLayout_5.addWidget(self.page_comboBox)
@@ -219,13 +219,13 @@ class Ui_Form(object):
         font.setWeight(50)
         self.previ_page.setFont(font)
         self.previ_page.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:40px;\n"
-"  image: url(image/pre_page.png);\n"
-"  border:none}\n"
-"QPushButton:hover{\n"
-"  image: url(image/pre_page1.png)\n"
-"}")
+                                      "  width:40px;\n"
+                                      "  height:40px;\n"
+                                      "  image: url(image/pre_page.png);\n"
+                                      "  border:none}\n"
+                                      "QPushButton:hover{\n"
+                                      "  image: url(image/pre_page1.png)\n"
+                                      "}")
         self.previ_page.setText("")
         self.previ_page.setObjectName("previ_page")
         self.horizontalLayout.addWidget(self.previ_page)
@@ -248,23 +248,23 @@ class Ui_Form(object):
         font.setWeight(50)
         self.next_page.setFont(font)
         self.next_page.setStyleSheet("QPushButton{\n"
-"  width:40px;\n"
-"  height:40px;\n"
-"  image: url(image/next_page.png);\n"
-"  border:none}\n"
-"QPushButton:hover{\n"
-"  image: url(image/next_page1.png)\n"
-"}\n"
-"\n"
-"")
+                                     "  width:40px;\n"
+                                     "  height:40px;\n"
+                                     "  image: url(image/next_page.png);\n"
+                                     "  border:none}\n"
+                                     "QPushButton:hover{\n"
+                                     "  image: url(image/next_page1.png)\n"
+                                     "}\n"
+                                     "\n"
+                                     "")
         self.next_page.setText("")
         self.next_page.setObjectName("next_page")
         self.horizontalLayout.addWidget(self.next_page)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.scrollArea = QtWidgets.QScrollArea(self.widget)
         self.scrollArea.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"border-radius:8px;\n"
-"border:none")
+                                      "border-radius:8px;\n"
+                                      "border:none")
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
