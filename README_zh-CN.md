@@ -71,3 +71,5 @@
 ![](InterfacePicture/显示时间--开.png)
 ___
 ![](InterfacePicture/None.png)
+
+PS:如使用过程遇到bug请提出 ~~我已经把我所知道的bug都解决了:)~~

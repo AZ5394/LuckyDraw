@@ -71,3 +71,5 @@ The interface has these main functions
 ![](InterfacePicture/show_current_time.png)
 ___
 ![](InterfacePicture/None--EN.png)
+
+PS: If you encounter bugs during use please ask ~~I have fixed all the bugs I know of :)~~
