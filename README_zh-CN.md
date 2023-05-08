@@ -6,7 +6,9 @@
 
 # LuckyDraw
 
-## **介绍**
+## 介绍
+### PS:启动文件是LuckyDraw.py,只有这个才是启动文件
+![](InterfacePicture/启动文件.png)
 
 - LuckyDraw是一个轻量且易上手的抽号程序
 

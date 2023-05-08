@@ -6,7 +6,10 @@
 
 # LuckyDraw
 
-## `Introduction`
+## Introduction
+### PS:The start-up file is LuckyDraw.py,not others
+
+![](InterfacePicture/start-up.png)
 
 - LuckyDraw is a lightweight and easy to use number drawing program
 
