@@ -24,10 +24,10 @@ class MainWindow(Main_ui, QWidget):  # 主窗口
         self.setWindowFlags(Qt.FramelessWindowHint)  # 去除边框
         self.setAttribute(Qt.WA_TranslucentBackground)
 
-        screen = QDesktopWidget().screenGeometry()  # 窗口居中屏幕显示
-        size = self.geometry()
-        self.move((screen.width() - size.width()) / 2,
-                  (screen.height() - size.height()) / 2)
+        # screen = QDesktopWidget().screenGeometry()  # 窗口居中屏幕显示
+        # size = self.geometry()
+        # self.move((screen.width() - size.width()) / 2,
+        #           (screen.height() - size.height()) / 2)
 
         self.config = QSettings('wklQnlkm', 'LuckyDraw')
         # 从注册表里读取字体大小,没有就用默认大小
