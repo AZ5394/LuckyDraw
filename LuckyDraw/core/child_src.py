@@ -1,6 +1,6 @@
 # coding:utf-8
-# @Author:wklQnlkm
-# GitHub:github.com/wklQnlkm
+# @Author:AZ5394
+# GitHub:github.com/AZ5394
 from PyQt5.QtWidgets import QWidget, QApplication
 from PyQt5.QtCore import QTimer
 from PyQt5.Qt import Qt, QPropertyAnimation
