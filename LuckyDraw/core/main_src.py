@@ -1,6 +1,6 @@
 # coding:utf-8
-# @Author:wklQnlkm
-# GitHub:github.com/wklQnlkm
+# @Author:AZ5394
+# GitHub:github.com/AZ5394
 import sys
 from datetime import datetime
 from random import sample
